@@ -30,21 +30,20 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-import GoldenLayout from 'golden-layout';
-import { makeLayout, resetLayout } from './lib/goldenlayout/instance';
-import { layouts } from './lib/goldenlayout/layouts';
+import { Layout } from './lib/goldenlayout/layout';
+import { layouts, defaultLayout } from './lib/goldenlayout/layouts';
 
 @Component
 export default class extends Vue {
 
-  private layout!: GoldenLayout;
+  private layout!: Layout;
 
   public mounted() {
-    this.layout = makeLayout({id: 'my-app', handle: this.$refs.workspace as Element});
+    this.layout = new Layout('my-app', defaultLayout, this.$refs.workspace as HTMLElement);
   }
 
   private setLayout(name: keyof typeof layouts) {
-    resetLayout(this.layout, layouts[name]);
+    this.layout.resetLayout(layouts[name]);
   }
 }
 </script>
