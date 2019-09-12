@@ -1,5 +1,5 @@
 <template>
-  <section pstools>
+  <section my-app>
     <header>
       <button @click="setLayout('layout A')">Layout A</button>
       <button @click="setLayout('layout B')">Layout B</button>
@@ -10,7 +10,7 @@
 </template>
 
 <style lang="scss" scoped>
-  [pstools] {
+  [my-app] {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ export default class extends Vue {
   private layout!: GoldenLayout;
 
   public mounted() {
-    this.layout = makeLayout({id: 'pstools', handle: this.$refs.workspace as Element});
+    this.layout = makeLayout({id: 'my-app', handle: this.$refs.workspace as Element});
   }
 
   private setLayout(name: keyof typeof layouts) {
