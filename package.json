@@ -1,0 +1,28 @@
+{
+  "name": "pstools",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "@vue/cli": "^3.11.0",
+    "@vue/cli-plugin-typescript": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "golden-layout": "^1.5.9",
+    "jquery": "^3.4.1",
+    "reset-css": "^4.0.1",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.6.3",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.1.0",
+    "vue-property-decorator": "^8.2.2",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1"
+  }
+}
