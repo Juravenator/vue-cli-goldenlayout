@@ -14,7 +14,7 @@
     "@vue/cli-plugin-typescript": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
     "golden-layout": "^1.5.9",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "reset-css": "^4.0.1",
     "sass": "^1.22.12",
     "sass-loader": "^8.0.0",
